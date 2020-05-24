@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+serve:
+  stage: deploy
+  environment:
+    name: production
+  only:
+    - master
+  script:
+    - docker-compose down
+    - docker-compose up -d
+    # - curl http://localhost:8989
+  tags:
+    - pc
