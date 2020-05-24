@@ -12,4 +12,4 @@ serve:
     - docker-compose up -d
     # - curl http://localhost:8989
   tags:
-    - pc
+    - local
